@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://maqe.github.io/maqe-bot.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<title>MAQE Bot - MAQE Homework Challenge</title>
+		<link rel="stylesheet" href="./MAQE Bot - MAQE Homework Challenge_files/styles.css">
+		<link href="./MAQE Bot - MAQE Homework Challenge_files/css" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="57x57" href="https://maqe.github.io/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="https://maqe.github.io/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://maqe.github.io/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://maqe.github.io/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://maqe.github.io/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://maqe.github.io/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://maqe.github.io/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://maqe.github.io/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://maqe.github.io/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="https://maqe.github.io/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="https://maqe.github.io/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="https://maqe.github.io/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="https://maqe.github.io/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="https://maqe.github.io/favicon-16x16.png" sizes="16x16">
+		<link rel="mask-icon" href="https://maqe.github.io/safari-pinned-tab.svg" color="#3a4454">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<div class="wrapper">
+			<a href="https://maqe.github.io/index.html">&lt; Back</a>
+			<header>
+				<div class="logo"><img src="./MAQE Bot - MAQE Homework Challenge_files/logo.svg"></div>
+				<h1>MAQE Homework Challenge - MAQE Bot</h1>
+			</header>
+			<section>
+				<p>
+					MAQE has built a robot called MAQE Bot which walks in 2-dimensional plane (X, Y coordinate). It can only turn left or right, and walk straight. It also knows of its current position (X, Y) as well as its direction (North, East, West and South). In order to command MAQE Bot to walk, it must be input with a walking command. The walking command can be represented with a string consisting of three alphabets <strong>R</strong>, <strong>L</strong> and <strong>W</strong> and a positive integer <strong><em>N</em></strong> to indicate the distance of how many positions it has to walk which can be explained as follows:
+				</p>
+
+				<ul>
+					<li><strong>R</strong>: Turn 90 degree to the right of MAQE Bot (clockwise)</li>
+					<li><strong>L</strong>: Turn 90 degree to the left of MAQE Bot (counterclockwise)</li>
+					<li><strong>W</strong><strong><em>N</em></strong>: Walk straight for <strong><em>N</em></strong> point(s) where <strong><em>N</em></strong> can be any positive integers. For example, <strong>W1</strong> means walking straight for 1 point.</li>
+				</ul>
+
+				<p><strong>Initial Conditions:</strong></p>
+
+				<ul>
+					<li>MAQE Bot starts at the position (X, Y) of 0, 0</li>
+					<li>MAQE Bot is facing up North</li>
+				</ul>
+
+				<p class="text-center"><img src="./MAQE Bot - MAQE Homework Challenge_files/maqe-bot-diagram.png"></p>
+
+				<p>For example, the walking code of <strong>RW15RW1</strong> means</p>
+
+				<ul>
+					<li>MAQE Bot starts at 0, 0 facing up North.</li>
+					<li>MAQE Bot turns right (facing East) and walk straight 15 positions.</li>
+					<li>MAQE Bot turns another right (now facing South) and walk straight 1 position.</li>
+				</ul>
+
+				<p>Your task is to create a <strong>command-line based script</strong> in <strong>any programming language of your choice</strong>. The script accepts a command line argument as an input string of the walking code and print out the result of the last position (X, Y) of MAQE Bot and its last facing direction (North, East, West or South).</p>
+
+				<p>Note that the output is case-sensitive.</p>
+
+				<p>A sample of a running script in a terminal with the input of <strong>RW15RW1</strong>:</p>
+
+<pre>&gt; php maqebot.php RW15RW1
+&gt; X: 15 Y: -1 Direction: South
+</pre>
+
+				<p><strong>Sample of Test Data:</strong></p>
+
+				<ul>
+					<li>W5RW5RW2RW1R</li>
+					<li>RRW11RLLW19RRW12LW1</li>
+					<li>LLW100W50RW200W10</li>
+					<li>LLLLLW99RRRRRW88LLLRL</li>
+					<li>W55555RW555555W444444W1</li>
+				</ul>
+
+				<hr>
+
+				<p>Feel free to use the internet to look up any coding references, but please do not ask anyone else for help. We want to see how <strong><em>you</em></strong> code.</p>
+
+				<p>When you have finished all required tests email your completed files (including your resume and cover letter) to <a href="mailto:recruit@maqe.com">recruit@maqe.com</a>.</p>
+
+			</section>
+
+			<hr>
+
+			<footer>
+				<p>Tests by <a href="https://www.maqe.com/" target="_blank">MAQE</a>.</p>
+			</footer>
+		</div>
+
+	
+<script async="" src="./MAQE Bot - MAQE Homework Challenge_files/analytics.js.download"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27524000-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body></html>
